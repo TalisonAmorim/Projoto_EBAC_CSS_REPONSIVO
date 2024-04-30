@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+h2 {
+  border-bottom:solid #8b4513;
+  margin-bottom: 20px;
+  
+}
+
+body {
+  background-color: #f6eea9; /* Bege claro */
+}
+
+header {
+  background-color: #d2b48c; /* Marrom claro */
+  padding-top: 16px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header > .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+nav {
+  background-color: #a0522d; /* Marrom escuro */
+  padding: 16px 0;
+  display: none;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-hamburguer {
+  width: 32px;
+  cursor: pointer;
+}
+
+.menu-hamburguer span{
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.container-flex {
+  display: flex;
+}
+
+#sobre-a-loja {
+  margin-top: 16px;
+  display: flex;
+}
+
+#sobre-a-loja img {
+  max-width: 400px;
+  margin-right: 24px;
+}
+
+section {
+  margin-top: 16px;
+}
+
+.lista {
+  margin-top: 16px ;
+}
+
+.lista ul{
+  display: grid;
+  grid-template-columns: repeat(4, 24.5%);
+  column-gap: 1%;
+}
+
+#lista-produtos img {
+  width: 100%;
+}
+
+#lista-produtos li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.price {
+  margin: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 2px 0;
+  margin-top: 2px;
+  border: none;
+  background-color: #8b4513; /* Marrom */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #a0522d; /* Marrom escuro */
+}
+
+footer {
+  bottom: 0;
+  margin-top: 20px;
+  color: #241001;
+  background-color: #d2b48c;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer .redes {
+  margin-bottom: 10px;
+}
+
+footer .redes a {
+  margin-right: 10px;
+}
+
+footer .redes a img {
+  width: 30px;
+  height: 30px;
+}
+
+
+.icoRedes {
+  color: #8b4513; 
+  margin: 0 10px;
+  transition: color 0.3s; 
+}
+
+
+.icoRedes:hover {
+  color: #914c2cbd; 
+}
+
+@media  screen and (max-width: 640px) {
+
+  .container {
+      max-width: 90%;
+      display: block;
+  } 
+  
+  header > .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 16px;
+  }
+
+  #sobre-a-loja {
+      display: flex;
+  }
+  
+  #sobre-a-loja img {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 2%;
+  }
+
+  .menu-hamburguer {
+      display: block;
+  }
+
+  .menu-hamburguer span{
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      display: block;
+      margin-bottom: 4px;
+  }
+
+  .lista ul {
+      display: block;
+      column-gap: 1%;
+      row-gap: 5%;
+  }
+
+  button {
+      margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container{
+      max-width: 90%;
+  }
+
+  #sobre-a-loja .container-flex {
+      display: block;
+  }
+  
+  #sobre-a-loja img {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 2%;
+  }   
+
+  .lista .container-flex {
+      grid-template-columns: repeat(2, 49%);
+  }
+
+  button {
+      margin-bottom: 10px;
+  }
+}
