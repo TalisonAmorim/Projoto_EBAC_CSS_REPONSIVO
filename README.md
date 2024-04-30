@@ -16,12 +16,15 @@ A entrega desse exercício consiste em:
 • Seguir as adaptações de layout propostas e fazer a publicação na Vercel nos enviando link do projeto. 
 
 Layout Desktop (a partir de 1024px): 
+
 ![Exemplo de layout](imagens/layout%20projeto/Layout%20Desktop%20(a%20partir%20de%201024px).png)
 
 Layout Tablet (de 641px até 1023px):
+
 ![Exemplo de layout](imagens/layout%20projeto/Layout%20Tablet%20(de%20641px%20até%201023px).png)
 
 Layout Mobile (até 640px):
+
 ![Exemplo de layout](imagens/layout%20projeto/Layout%20Mobile%20(até%20640px).png)
 
 ## Estrutura
